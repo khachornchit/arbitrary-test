@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Arbitrarily Nested Arrays</title>
+    <meta charset="utf-8" />
+    <script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Converting Your Arbitraritly Nested Array</h1>
+        </header>
+        <p>
+            <h2>Input Arbitrarily Nested Array:</h2>
+            Input Your Arbitraritly Nested Array : <input type="text" id="customArray" /><br /><br />
+            Click here to flatten your array: <button id="buttonFlatten" style="cursor:pointer">Flatten Your Array</button>
+        </p>
+
+        <p>
+            <h2>Flatten Integer Array: </h2>
+            <label id='displayResult'>Waiting for your input</label>
+        </p>
+    </section>
+    <script src="flattenFunction.js"></script>
+    <script type="text/javascript">
+        (function () {
+            $('#buttonFlatten').on('click', customFlatten);
+        })();
+    </script>
+</body>
+</html>
